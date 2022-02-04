@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+
+.cover-bg {
+  background-image: url(./assets/cover.jpeg);
+  opacity: 2;
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover-title {
+  color: #46507a;
+  text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+  font-family: "Pacifico";
+  font-size: 6em;
+  padding-top: 7%;
+}
+
+.all-treks {
+  text-align: center;
+  color: #2c2c2c;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 2vw;
+  margin-top: 5vh;
+}
+
+.trekcards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.trekcards-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.big-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.card-thi-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2vw;
+}
+
+.card-pic-container {
+  display: flex;
+  justify-content: center;
+    object-fit: cover;
+}
+.card-pic {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Pacifico";
+  color: #46507a;
+  text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+}
+
+.card-location {
+  font-weight: bold;
+}
+
+.card-difficulty {
+
+  color: #525252;
+  font-size: 14px;
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
