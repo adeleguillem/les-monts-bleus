@@ -1,0 +1,18 @@
+
+GET http://localhost:3001/api/treks
+Content-Type: application/json
+
+##################
+
+GET http://localhost:3001/api/treks/1
+Content-Type: application/json
+
+##################
+
+
+
+GET http://localhost:3001/
+Content-Type: application/json
+
+##################
+
