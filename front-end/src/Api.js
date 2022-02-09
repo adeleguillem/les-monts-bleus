@@ -9,3 +9,7 @@ export const fetchTreks = async () => {
     return (await axios(`${API_URL}/treks`)).data;
   };
   
+
+  export const fetchTrekDetails = async (trekId) => {
+    return (await axios(`${API_URL}/treks/${trekId}`)).data;
+  };

@@ -2,7 +2,10 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { fetchTreks } from "./Api";
 
-const TrekCard = () => {
+const TrekCard = ({
+  onClick = () => {},
+  ...treks
+}) => {
   const [trekDetails, setTrekDetails] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -20,16 +23,15 @@ const TrekCard = () => {
           {loading ? (
             <p>Chargement en cours ...</p>
           ) : (
-            trekDetails.map((treks) => (
+            
               <>
-                <div className="card-thi-container">
-                  <div className="card-pic-container">
+                 
                     <img
                       src={treks.cover_pic}
                       className="card-pic"
                       alt={treks.name}
                     />
-                  </div>
+              
                   <h1 className="card-title">{treks.name}</h1>
                   <div className="card-tags-container">
                     <div className="card-location">
@@ -50,10 +52,9 @@ const TrekCard = () => {
                       
                     </div>
                   </div>
-                </div>
               </>
-            ))
-          )}{" "}
+            )
+          }
         </div>
       </div>
     </>
